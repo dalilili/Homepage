@@ -57,6 +57,7 @@
 				<li><a href="#" data-tab="2"><span class="icon icon-graduation-cap"></span><span class="menu-text">Education</span></a></li>
 				<li><a href="#" data-tab="3"><span class="icon icon-black-tie"></span><span class="menu-text">Experience</span></a></li>
 				<li><a href="#" data-tab="4" data-pie="yes"><span class="icon icon-fighter-jet"></span><span class="menu-text">Skills</span></a></li>
+				<li><a href="#" data-tab="5" data-pie="yes"><span class="icon icon-fighter-jet"></span><span class="menu-text">Skills</span></a></li>
 			</ul>
 			<div class="fh5co-tab-content active" data-content="1">
 				<div class="fh5co-content-inner text-center">
@@ -205,6 +206,55 @@
 				</div>
 			</div>
 		</div>
+		<div class="fh5co-tab-content" data-content="2">
+				<div class="fh5co-content-inner">
+					<div class="row">
+						<div class="col-md-12">
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                                         <div style="text-align:center"> 
+  <button onclick="playPause()">播放/暂停</button> 
+  <button onclick="makeBig()">放大</button>
+  <button onclick="makeSmall()">缩小</button>
+  <button onclick="makeNormal()">普通</button>
+  <br> 
+  <video id="video1" width="420">
+    <source src="robot.mp4" type="video/mp4">
+    <source src="mov_bbb.ogg" type="video/ogg">
+  </video>
+</div> 
+
+<script> 
+var myVideo=document.getElementById("video1"); 
+
+function playPause()
+{ 
+	if (myVideo.paused) 
+	  myVideo.play(); 
+	else 
+	  myVideo.pause(); 
+} 
+
+	function makeBig()
+{ 
+	myVideo.width=560; 
+} 
+
+	function makeSmall()
+{ 
+	myVideo.width=320; 
+} 
+
+	function makeNormal()
+{ 
+	myVideo.width=420; 
+} 
+</script> 
+						
+						
+					</div>
+				</div>
+			</div>
+            
 		<footer id="fh5co-footer">
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3 text-center">
